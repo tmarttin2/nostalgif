@@ -3,10 +3,10 @@
     $servidorBD = "localhost"; //Define a localização do servidor de BD
     $usuarioBD  = "root"; //Define o nome do usuário do servidor de BD
     $senhaBD    = "root"; //Define a senha do usuário do servidor de BD
-    $database   = "nostalgif"; //Define o banco de dados que a aplicação PHP conectará
+    $database   = "Nostalgif"; //Define o banco de dados que a aplicação PHP conectará
 
     //A função mysqli_connect conecta o BD à Aplicação
-    $conn       = mysqli_connect($servidorBD, $usuarioBD, $senhaBD, $database); 
+    $conn       = new mysqli($servidorBD, $usuarioBD, $senhaBD, $database); 
 
     if(!$conn){
         echo "<p>Erro ao tentar conectar ao BD
